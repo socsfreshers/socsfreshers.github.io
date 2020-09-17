@@ -281,6 +281,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   background-color: gold !important;
 }
 
+.link-button {
+  border-radius: 5px;
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #03a9f4 !important;
+  color: white !important;
+}
+
+.link-button:hover{
+  background-color:#03a9f4!important;
+  color: white !important;
+}
 
 
 .blink {
