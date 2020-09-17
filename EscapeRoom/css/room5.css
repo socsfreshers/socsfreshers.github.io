@@ -1,0 +1,91 @@
+body{
+  background-color: #444;
+}
+
+
+input {
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+::placeholder{
+  color: black;
+}
+
+div.question {
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+/*Items for challenge*/
+
+.container{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.puzzle {
+  margin: auto;
+  width: 50%;
+  display: grid;
+  color: gold;
+  font-size: 30px;
+  place-content: center;
+  width: 15rem;
+  height: 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid currentColor;
+  cursor: pointer;
+}
+.puzzle_num {
+  display: grid;
+  place-content: center;
+  border: 1px solid currentColor;
+}
+.puzzle_num.-empty {
+  background-color: gold;
+}
+.puzzle_num.-hidden {
+  display: none;
+}
+
+#results{
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  bottom: 20%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+  font-size: 20px;
+}

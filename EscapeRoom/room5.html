@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/room5.css">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+	<title>Task 5</title>
+
+</head>
+
+
+<body> 
+
+
+<a href="map.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
+
+<div class="question">
+Solve the grid to reveal the clue. 
+</div>
+
+<div class="container">
+
+	<div class="puzzle">
+	  <div class="puzzle_num">1</div>
+	  <div class="puzzle_num">2</div>
+	  <div class="puzzle_num">3</div>
+	  <div class="puzzle_num -hidden">\n</div>
+	  <div class="puzzle_num">4</div>
+	  <div class="puzzle_num">5</div>
+	  <div class="puzzle_num">6</div>
+	  <div class="puzzle_num -hidden">\n</div>
+	  <div class="puzzle_num">7</div>
+	  <div class="puzzle_num">8</div>
+	  <div class="puzzle_num -empty"></div>
+	</div>
+
+</div>
+
+
+<div id="results"><p></p></div> <!-- innerhtml element for planet arrangement game at bottom of index page -->
+
+
+<input type="text" id="answer" placeholder="Check Answer.." onkeyup="getAnswer()">
+
+
+</body>
+
+<script src = "js/room5.js"></script>
+
+</html>

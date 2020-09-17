@@ -1,0 +1,180 @@
+body{
+  background-color: #444;
+}
+
+div.question {
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.cube-container1 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+#cube1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ( -100px ) rotateZ(45deg) rotateX(45deg);
+  animation: spin 3s infinite linear;
+}
+@keyframes spin {
+  0% { transform: translateZ( -100px ) rotateY(360deg) rotateZ(0deg) rotateX(45deg) }
+  50% { transform: translateZ( -100px ) rotateY(180deg) rotateZ(180deg) rotateX(45deg) }
+  100% { transform: translateZ( -100px ) rotateY(0deg) rotateZ(360deg) rotateX(45deg) }
+}
+
+#cube1 figure {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  line-height: 200px;
+  background: rgba(0, 0, 255, 0.25);
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border: 1px dotted blue;
+  backface-visibility: hidden;
+}
+#cube1 .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
+#cube1 .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
+#cube1 .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
+#cube1 .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
+#cube1 .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+#cube1 .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+
+.cube-container2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+#cube2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ( -100px ) rotateZ(45deg) rotateX(45deg);
+  animation: spin 6s infinite linear;
+}
+
+#cube2 figure {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  line-height: 200px;
+  background: rgba(0, 0, 255, 0.25);
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border: 1px dotted blue;
+  backface-visibility: hidden;
+}
+#cube2 .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
+#cube2 .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
+#cube2 .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
+#cube2 .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
+#cube2 .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+#cube2 .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+
+
+.cube-container3 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+#cube3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ( -100px ) rotateZ(45deg) rotateX(45deg);
+  animation: spin 9s infinite linear;
+}
+
+#cube3 figure {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  line-height: 200px;
+  background: rgba(0, 0, 255, 0.25);
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border: 1px dotted blue;
+  backface-visibility: hidden;
+}
+#cube3 .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
+#cube3 .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
+#cube3 .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
+#cube3 .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
+#cube3 .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+#cube3 .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+
+input {
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+::placeholder{
+  color: black;
+}
+
+#results{
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  bottom: 15%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+  font-size: 20px;
+}
+

@@ -1,0 +1,118 @@
+body{
+  background-color: #444;
+}
+
+
+input {
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+::placeholder{
+  color: black;
+}
+
+div.question {
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+/*Layout of the challenge grid items*/
+
+.grid{
+width: 75%;
+position: absolute;
+top: 30%;
+left: 15%;
+}
+
+#sortableContainer{
+display: table;
+margin: auto;
+}
+
+#results{
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  bottom: 20%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+  font-size: 20px;
+}
+
+div.sortIt { 
+  height: 150px;
+  width: 150px; 
+  font-family: Verdana;
+  color: white;
+  font-size: 10px;
+  text-align: center; 
+  padding: 10px; 
+  z-index: 999; 
+  float: left;
+  flex-wrap: wrap;
+}
+
+div.sortIt { 
+  curser: -webkit-grab; cursor: grab;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  top: 15%;
+  left: 35%;
+  right: 35%;
+  width: 30%;
+}
+
+.button1 {
+  background-color: #4CAF50; 
+  color: black; 
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+

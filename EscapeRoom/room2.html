@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/room2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>Task 2</title>
+
+</head>
+
+
+<body> 
+
+
+<a href="map.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
+
+<div class="question">
+What is the missing number in binary?
+</div>
+
+<div class="container">
+	<div class="cube-container1">
+	<div id="cube1">
+	  <figure class="face front">0</figure>
+	  <figure class="face back">1</figure>
+	  <figure class="face left">1</figure>
+	  <figure class="face right">2</figure>
+	  <figure class="face top">3</figure>
+	  <figure class="face bottom">8</figure>
+	</div>
+	</div>
+
+	<div class="cube-container2">
+	<div id="cube2">
+	  <figure class="face front">13</figure>
+	  <figure class="face back">21</figure>
+	  <figure class="face left">34</figure>
+	  <figure class="face right"></figure>
+	  <figure class="face top">89</figure>
+	  <figure class="face bottom">144</figure>
+	</div>
+	</div>
+
+	<div class="cube-container3">
+	<div id="cube3">
+	  <figure class="face front">233</figure>
+	  <figure class="face back">377</figure>
+	  <figure class="face left">610</figure>
+	  <figure class="face right">987</figure>
+	  <figure class="face top">1597</figure>
+	  <figure class="face bottom">2584</figure>
+	</div>
+	</div>
+</div>
+
+<div id="results"><p></p></div> 
+
+<input type="text" id="answer" placeholder="Check Answer.." onkeyup="getAnswer()">
+
+
+</body>
+
+<script src = "js/room2.js"></script>
+
+</html>

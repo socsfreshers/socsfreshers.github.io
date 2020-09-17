@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/map.css">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+	<title>Map</title>
+
+</head>
+
+
+<body> 
+
+
+
+<div class="message"><b>Welcome to your escape room! Solve the 8 tasks to escape the room. The team with the most tasks solved in the quickest time wins! Good luck!!</div>
+
+
+<div class="completedOverlay">
+    
+    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/uwmeH6Rnj2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="wrapper">
+
+    <div class="lock">
+        <div class="lock1" id="lock1"><img id="imglock1" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 1</p></div>
+        <div class="lock2" id="lock2"><img id="imglock2" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 2</p></div>
+        <div class="lock3" id="lock3"><img id="imglock3" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 3</p></div>
+        <div class="lock4" id="lock4"><img id="imglock4" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 4</p></div>
+        <div class="lock5" id="lock5"><img id="imglock5" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 5</p></div>
+        <div class="lock6" id="lock6"><img id="imglock6" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 6</p></div>
+        <div class="lock7" id="lock7"><img id="imglock7" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 7</p></div>
+        <div class="lock8" id="lock8"><img id="imglock8" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Task 8</p></div>
+    </div>
+
+        
+        <div class="shelf-wrapper">
+            <div class="shelf1">
+                <a href="room7.html"><div id="slantbook" onMouseover="displaySlantBook();"></div></a>
+                <div id="flatbook" onMouseover="displayFlatBook();"></div>
+
+            </div>
+            <div class="shelf2">
+                <a href="room5.html"><div id="flatbook3" onMouseover="displayFlatBook3();"></div></a>
+                <a href="room6.html"><div class="penstand" onMouseover="displayPenstand();">
+                    <div id="pen"></div>
+                </div></a>
+
+            </div>
+            <div class="shelfknob">
+                <div class="knob" id="knob1" onMouseover="displayKnob1();"></div>
+                <div class="knob" id="knob2" onmouseover="displayKnob2();"></div>
+
+            </div>
+
+        </div>
+        <a href="room8.html"><div class="window" onMouseover="displayWindow();">
+            <span id="moon"></span>
+            <!-- <div class="stars">
+                <div id="star1"></div>
+                <div id="star2"></div>
+                <div id="star3"></div>
+                <div id="star4"></div>
+                <div id="star5"></div>
+                <div id="star6"></div>
+                <div id="star7"></div>
+                <div id="star8"></div>
+                <div id="star9"></div>
+                <div id="star10"></div>
+
+            </div> -->
+        </div></a>
+        <div class="container">
+            <a href="room1.html"><div class="cup" onMouseover="displayCup();"></div></a>
+
+            <div class="trophy" id="trophy" onMouseover="displayTrophy();"></div>
+
+            <a href="../index.html"><div class="bin" id="bin" onclick="clearLocks();" onMouseover="displayBin();"></div></a>
+
+            <a href="room2.html"><div class="table" onMouseover="displayTable();">
+                <span class="handle" id="handle1"></span>
+                <span class="handle" id="handle2"></span>
+                <div id="margintop">
+                    <div class="tableleg" id="table0"></div>
+                    <div class="tableleg" id="table1"></div>
+                    <div class="tableleg" id="table2"></div>
+                    <div class="tableleg" id="table3"></div>
+                    <div class="tableleg" id="table4"></div>
+                    <div class="tableleg" id="table5"></div>
+                    <div class="tableleg" id="table6"></div>
+                    <div class="tableleg" id="table7"></div>
+                </div>
+            </div></a>
+
+            <div class="lamp">
+                <div id="lampjoint"></div>
+                <a href="room4.html"><div class="lamphead" onMouseover="displayLamphead();"></div></a>
+            </div>
+            <a href="room3.html"><div class="monitor" onMouseover="displayMonitor();">
+                <span id="monitor-base"></span>
+            </div></a>
+
+            <div class="semicircle"></div>
+            <div class="floor1" onMouseover="displayFloor();">
+                
+                <div id="results"><p></p></div>
+
+            </div>
+        </div>
+        <!-- <div class="computer">
+            <span id="base"></span>
+        </div> -->
+
+    </div>
+
+
+
+</body>
+
+
+<script src = "js/map.js"></script>
+  
+
+
+</script>
+
+</html>

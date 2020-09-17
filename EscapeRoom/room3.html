@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/room3.css">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>Task 3</title>
+
+</head>
+
+
+<body> 
+
+
+<a href="map.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
+
+<div class="question">
+Use your keyboard arrow keys to catch atleast 7 aliens to reveal the clue. 
+</div>
+
+
+<div id="timer"></div>
+
+<canvas id="canvas" width="512" height="480"></canvas>
+
+	<div><img id="arrowkeys1" src="assets/arrowkeys1.png" style="width:50px; height:50px; border:0;"><div>
+	<div><img id="arrowkeys2" src="assets/arrowkeys2.png" style="width:50px; height:50px; border:0;"><div>
+	<div><img id="arrowkeys3" src="assets/arrowkeys3.png" style="width:50px; height:50px; border:0;"><div>
+	<div><img id="arrowkeys4" src="assets/arrowkeys4.png" style="width:50px; height:50px; border:0;"><div>
+
+</div>
+
+<div id="congrats"><p></p></div>
+
+
+<div id="results"><p></p></div> 
+
+
+<input type="text" id="answer" placeholder="Check Answer.." onkeyup="getAnswer()">
+
+
+</body>
+
+<script src = "js/room3.js"></script>
+
+</html>
