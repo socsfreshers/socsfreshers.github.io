@@ -188,13 +188,16 @@ function timer() {
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "70";
+var answer = "b7103ca278a75cad8f7d065acda0c2e80da0b7dc"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{

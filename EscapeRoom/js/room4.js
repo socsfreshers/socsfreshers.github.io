@@ -31,13 +31,16 @@ $( document ).ready(function()
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "102564";
+var answer = "f128f8068c9d9b9ab1fa96e6e997ced631ad6a09"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{

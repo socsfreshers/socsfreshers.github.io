@@ -961,13 +961,16 @@ class Labirynthe {
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "246"; //42 + 204 (in binary)
+var answer = "3464dc11507c600bbff7daec3d6fb71402063a5f"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{

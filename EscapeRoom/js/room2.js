@@ -1,15 +1,15 @@
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-//var answer = SHA1("55"); //asign result of SHA1 function to answer (55) - 8effee409c625e1a2d8f5033631840e6ce1dcb64 
-//console.log(answer);
-
-var answer = "110110"; //55 in binafry = 110110
+var answer = "b8e1ae264670b085f4983d324cb79d9326fb8d15"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{

@@ -20,15 +20,19 @@ $('.circle').hover(
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "8589934592"; 
+var answer = "75b7c8f9093e6e07e31560616ac10bda7c877d09"; //SHA1 value of correct answer
 //console.log(answer);
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
-        document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
+  var x = SHA1(y.value);
+  //console.log(x);
+
+  if(x != answer){
+        document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrect turn red
         return false;
     }else{
         document.getElementById('answer').style.backgroundColor = "green"; //when answer is correct turn green
@@ -40,7 +44,6 @@ function getAnswer() {
         localStorage.setItem("room1", "complete");
     };
 }
-
 
 // SHA1 Function
 function SHA1 (msg) {
