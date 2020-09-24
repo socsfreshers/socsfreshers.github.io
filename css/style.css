@@ -544,3 +544,25 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 }
+
+/* Tool tip for Discord link */
+.hasTooltip + span {
+    display:none;
+}
+
+.showTooltip {
+    background-color: black;
+    color: white;
+    padding:5px;
+    margin-top: 1.3em;
+    position: absolute;
+    max-width: 200px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
