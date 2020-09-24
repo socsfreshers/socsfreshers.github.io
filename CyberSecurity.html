@@ -82,7 +82,7 @@
   <!-- How the team fits together Section -->
   <div class="w3-container w3-padding-32 max-width" id="help">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 textcenter" style="color: #ececec;">Help & Support</h3>
-    <p style="color: #ececec;">If you want to take part but don't really know where to start, don't worry. Many others will be in the same position. Each activity can be done independently or as a team. If you want to join a team but don't know of any, the best thing to do is register your interest on the respective activity page and we will then try to place you in a team with a mix of new and current students. This is a great way to meet new people! If you already have a team or want to try the challenges out on your own then you don't need to worry about this bit; but still create a cool Team name (even if you are on your own)! Remember, if you do try and complete the challenges individually then they may take a little longer! If you have any questions, please contact us on any of the links below (<a href="#" class="hasTooltip">Discord is probably the best and most active</a><span>If the Discord link is broken please let us know. They can sometimes expire!</span>.) and we will get straight back to you. No question is off limits so feel free to ask anything!
+    <p style="color: #ececec;">If you want to take part but don't really know where to start, don't worry. Many others will be in the same position. Each activity can be done independently or as a team. If you want to join a team but don't know of any, the best thing to do is register your interest on the respective activity page and we will then try to place you in a team with a mix of new and current students. This is a great way to meet new people! If you already have a team or want to try the challenges out on your own then you don't need to worry about this bit; but still create a cool Team name (even if you are on your own)! Remember, if you do try and complete the challenges individually then they may take a little longer! If you have any questions, please contact us on any of the links below (<a href="#" class="hasTooltip">Discord is probably the best and most active</a><span>If the Discord link is broken please let us know. They can sometimes expire!</span>) and we will get straight back to you. No question is off limits so feel free to ask anything!
     </p>
 
   </div>
@@ -150,6 +150,14 @@ window.onclick = function(e) {
   }
 }
 
+//Tooltip for discord link
+$('.hasTooltip').hover(function() {
+    var offset = $(this).offset();
+    $(this).next('span').fadeIn(200).addClass('showTooltip');
+    $(this).next('span').css('left', offset.left + 'px');
+}, function() {
+    $(this).next('span').fadeOut(200);
+});
 
 
 
