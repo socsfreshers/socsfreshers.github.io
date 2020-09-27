@@ -1,4 +1,4 @@
-# UoL SoiCS Freshers 2020 Orientation Week - 5th - 9th October 2020
+# UoL SoCS Freshers 2020 - 5th - 9th October 2020
 
 ## Student Engagement
 
